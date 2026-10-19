@@ -14,7 +14,7 @@ The player assembly has no developer-host dependency. An optional SDK adapter pr
 | --- | --- | --- |
 | ![Draw pile quick preview](assets/workshop/previews/draw-detail.jpg) | ![Discard pile quick preview](assets/workshop/previews/discard-detail.jpg) | ![Exhaust pile quick preview](assets/workshop/previews/exhaust-detail.jpg) |
 
-The gallery contains these close-ups and three wider gameplay captures from actual standalone0.1.0 testing. Images are mechanical crops/JPEG exports; no gameplay or UI was generated. Original captures are preserved privately. The complete assets/workshop/previews filename set is reconciled on publication; every release must retain useful demonstrations and verify the remote gallery.
+The gallery contains these close-ups and three wider gameplay captures from actual English owned-SDK rendering of the published0.1.0 player assembly. Images are mechanical crops/JPEG exports; no gameplay or UI was generated. Original captures are preserved privately. The lists contain native console-seeded test cards; background preview poses establish rendering, not new physical-input acceptance. All published game/mod UI and promotional text must be English; change the actual game language and recapture. Russian localization remains supported. The complete assets/workshop/previews filename set is reconciled on publication; every release must retain useful demonstrations and verify the remote gallery.
 
 ## Install
 
