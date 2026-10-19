@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <GodotProjectDir>$(MSBuildProjectDirectory)/..</GodotProjectDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Godot.SourceGenerators" Version="4.5.1" PrivateAssets="all" />
+    <Reference Include="sts2"><HintPath>$(Sts2DataDir)/sts2.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="GodotSharp"><HintPath>$(Sts2DataDir)/GodotSharp.dll</HintPath><Private>false</Private></Reference>
+    <PackageReference Include="Alchyr.Sts2.BaseLib" Version="3.4.7" IncludeAssets="compile" PrivateAssets="all" />
+    <PackageReference Include="STS2.RitsuLib.Compat.0.107.1" Version="0.6.7" IncludeAssets="compile" PrivateAssets="all" />
+    <EmbeddedResource Include="../localization/ui/*.json" LogicalName="PilePeek.Localization.%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>
