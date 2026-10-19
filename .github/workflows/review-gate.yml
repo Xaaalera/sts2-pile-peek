@@ -17,6 +17,7 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
+      - run: node --test scripts/review.test.mjs
       - name: Use the actual pushed range for main checks
         if: github.event_name == 'push'
         env:

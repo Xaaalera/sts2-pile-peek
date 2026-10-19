@@ -36,7 +36,7 @@ Steam delivery, multiplayer, alternate bindings/languages, repeated-key echo/foc
 
 ## Development and publication
 
-Run npm ci for the pinned review harness and pre-push hook. npm run review:info lists the required lenses; npm run review:attest -- <results.json> records actual independent results. Hosted review-gate scans the actual PR/main range for secrets; ordering-tests runs the four pure ordering tests without game binaries. Local runtime builds still need your installed0.107.1 references.
+Run npm ci for the pinned review harness and pre-push hook. npm run review:info lists the required lenses; npm run review:attest -- <results.json> records actual independent results. The wrapper requires every enabled lens, its passing threshold, the exact reviewed HEAD and a reviewer identity; incomplete or stale results fail with REVIEW_RESULTS_INVALID (INVALID_ARGUMENT/400). Three Node regression tests cover this validation. Hosted review-gate scans the actual PR/main range for secrets; ordering-tests runs the four pure ordering tests without game binaries. Local runtime builds still need your installed0.107.1 references.
 
 Changes merge into main through reviewed PRs. The private coordinator builds/tests merged green main and updates the existing Workshop item from its owned Steam runner. That workflow is maintained outside this public repository because it requires the private publishing machine. It uses only an allowlisted repository/item, preserves the accepted cover, and blocks ambiguous upload retries. A code/listing release requires a version bump in PilePeek.json and workshop.json. Publication setup and first end-to-end job are still pending; do not infer them from CI configuration.
 
