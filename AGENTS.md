@@ -1,0 +1,13 @@
+# Pile Peek working instructions
+
+- Pile Peek is an independent public MIT mod. Keep it usable without Intent Lens, the private workshop or the SDK host. Authored repository text stays English.
+- Keep authored source/docs in English. Mod UI copy lives in localization/ui/eng.json and rus.json through RitsuLib I18N; card/pile names and resource values stay native/localized by the game.
+- Reuse native pile controls, focus signals, hover-tip ownership, scenes, fonts and resource textures. Use actual Kreon Bold for authored labels. A custom facility requires a demonstrated gap in the workspace research journal.
+- Respect the native0.107.1 pile viewer: sorted draw copy, native discard/exhaust entry order, no hidden draw indices, RNG, card movement or gameplay mutation in the preview.
+- Preserve normal pile clicks/hotkeys. Dispose hover sets, scene bindings, subscriptions and developer adapters. Resident previews are not collectible UI HMR.
+- Keep exactly one owned test game; revalidate PID/path/UTC/session. Never control the owner's separate Steam game. Keep binaries/decompiles/profiles/raw evidence ignored.
+- Build against the pinned0.107.1 game, BaseLib3.4.7 and RitsuLib0.6.7. Revalidate APIs before upgrading. Game/reference assemblies must not be copied into the player package.
+- Native live UI checks supplement isolated ordering tests; neither proves all viewports, languages, turns or multiplayer.
+- README owns setup/behavior/verification; workshop.json owns the English listing/version/change note and assets/workshop/image.png the approved cover. Update affected documentation with code. Before pushing, consider whether new decisions, failures or acceptance belong in maintained knowledge; refresh any configured semantic index after final source edits.
+- Publish substantive changes through a reviewed PR into main. Run npm ci, npm run review:gate and the configured five independent lenses (craft7/architecture8/tests7/docs8/security9), then record real results with npm run review:attest. Never fabricate scores or bypass hooks. Hosted CI scans secrets and runs isolated ordering tests; it cannot compile against proprietary game references.
+- Main-to-Workshop publication runs from the private coordinator on its owned Windows/Steam runner. Never attach that machine to this public repository or run untrusted PR code there. Runtime/listing changes require a manifest version bump and matching workshop.json version/change note. Preserve the existing Workshop item and an ambiguous submitting receipt; inspect remote state before retries.
